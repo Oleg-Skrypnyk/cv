@@ -9,7 +9,7 @@
 
   .profession {
     margin-bottom: 25px;
-    @include font(14px, 700, 24px);
+    @include font(14px, $font-weight-bolt, 24px);
   }
 
   .name {
@@ -20,11 +20,11 @@
     margin-bottom: 20px;
 
     color: $secondary-text-color;
-    @include font(12px, 400, 24px);
+    @include font(12px, $font-weight-norm, 24px);
   }
 
   .description {
-    @include font(14px, 400, 24px);
+    @include font(14px, $font-weight-norm, 24px);
   }
 }
 
@@ -34,7 +34,7 @@
 
 .about-me-title {
   margin-bottom: 10px;
-  @include font(22px, 700, 24px);
+  @include font(22px, $font-weight-bolt, 24px);
 }
 
 // .projects-link {
@@ -55,7 +55,7 @@
 .profession-title {
   margin-top: 20px;
   margin-bottom: 5px;
-  @include font(16px, 700, 24px);
+  @include font(16px, $font-weight-bolt, 24px);
 }
 
 .profession-company {
@@ -69,7 +69,7 @@
 
 .profession-time {
   color: $secondary-text-color;
-  @include font(12px, 400, 24px);
+  @include font(12px, $font-weight-norm, 24px);
 }
 
 .profession-divider {
@@ -85,27 +85,27 @@
 .profession-achievements {
   margin-left: 20px;
   color: $primary-text-color;
-  @include font(14px, 400, 24px);
+  @include font(14px, $font-weight-norm, 24px);
 }
 
 .profession-achievements {
   margin: 0;
   margin-bottom: 25px;
-  font-weight: 700;
+  font-weight: $font-weight-bolt;
 }
 
 .education-company {
   margin-top: 20px;
   margin-bottom: 5px;
   color: $accent-color;
-  @include font(16px, 700, 24px);
+  @include font(16px, $font-weight-bolt, 24px);
 }
 
 .education-duties {
   margin-top: 5px;
   margin-bottom: 5px;
   color: $primary-text-color;
-  @include font(14px, 400, 24px);
+  @include font(14px, $font-weight-norm, 24px);
 }
 
 .dots {
