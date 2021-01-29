@@ -1,0 +1,73 @@
+.sidebar {
+  background: $sidebar-bg-color;
+  width: 370px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.my-photo {
+  width: 370px;
+}
+
+.contacts-container {
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.contacts-title,
+.skills-title {
+  margin-bottom: 10px;
+  @include font(22px, 700, 24px);
+
+  color: $sidebar-text-color;
+}
+
+.contacts-link {
+  text-decoration: none;
+  @include font(14px, 400, 24px);
+
+  color: $item-sidebar-color;
+  @include transit(color);
+
+  &:hover,
+  &:focus,
+  .contact-block:hover &,
+  .contact-block:focus & {
+    color: $accent-color;
+  }
+}
+
+.contacts-link-type {
+  margin-right: 10px;
+  @include font(14px, 700, 24px);
+
+  color: $sidebar-text-color;
+  @include transit(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    cursor: pointer;
+  }
+}
+
+// .icon {
+//   fill: #fff;
+// }
+
+.skills-container {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.skills-item {
+  margin-left: 20px;
+  @include font(14px, 400, 24px);
+  color: $accent-color;
+
+  .skills-text {
+    color: $item-sidebar-color;
+  }
+}

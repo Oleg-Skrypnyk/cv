@@ -1,0 +1,114 @@
+.about-me-container {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.info-container {
+  margin-bottom: 40px;
+
+  .profession {
+    margin-bottom: 25px;
+    @include font(14px, 700, 24px);
+  }
+
+  .name {
+    @include font(35px, 700, 60px);
+  }
+
+  .personal {
+    margin-bottom: 20px;
+
+    color: $secondary-text-color;
+    @include font(12px, 400, 24px);
+  }
+
+  .description {
+    @include font(14px, 400, 24px);
+  }
+}
+
+.projects-container {
+  margin-bottom: 30px;
+}
+
+.about-me-title {
+  margin-bottom: 10px;
+  @include font(22px, 700, 24px);
+}
+
+// .projects-link {
+//   color: $primary-text-color;
+//   @include font(14px, 400, 24px);
+// }
+
+// .tech-name {
+//   @include font(14px, 400, 24px);
+//   color:$primary-text-color;
+// }
+
+// .projects-item {
+//   font-weight: 700;
+//   margin-left: 20px;
+// }
+
+.profession-title {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  @include font(16px, 700, 24px);
+}
+
+.profession-company {
+  text-decoration: none;
+  color: $accent-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.profession-time {
+  color: $secondary-text-color;
+  @include font(12px, 400, 24px);
+}
+
+.profession-divider {
+  color: $divider-color;
+}
+
+.profession-duties {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.profession-duties-item,
+.profession-achievements {
+  margin-left: 20px;
+  color: $primary-text-color;
+  @include font(14px, 400, 24px);
+}
+
+.profession-achievements {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.education-company {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: $accent-color;
+  @include font(16px, 700, 24px);
+}
+
+.education-duties {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: $primary-text-color;
+  @include font(14px, 400, 24px);
+}
+
+.dots {
+  color: $dots-color;
+  font-weight: 100;
+}

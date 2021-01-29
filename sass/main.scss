@@ -1,14 +1,8 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import "./utils/variables";
+@import "./utils/mixins";
 
-body {
-  background: #f5f7fa;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: Montserrat;
-}
+@import "./base/fonts";
+@import "./base/body";
+
+@import "./components/sidebar";
+@import "./components/info-main";
