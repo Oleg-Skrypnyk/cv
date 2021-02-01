@@ -23,9 +23,9 @@
     @include font(12px, $font-weight-norm, 24px);
   }
 
-  .description {
-    @include font(14px, $font-weight-norm, 24px);
-  }
+  // .description {
+  //   @include font(14px, $font-weight-norm, 24px);
+  // }
 }
 
 .projects-container {
