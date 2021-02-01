@@ -1,12 +1,12 @@
 .sidebar {
   background: $sidebar-bg-color;
-  width: 370px;
+  min-width: 370px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .my-photo {
-  width: 370px;
+  width: 100%;
 }
 
 .contacts-container {
