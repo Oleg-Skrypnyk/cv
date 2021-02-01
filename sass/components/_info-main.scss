@@ -1,8 +1,8 @@
 .about-me-container {
-  padding-top: 60px;
+  padding-top: 75px;
   padding-bottom: 30px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 75px;
+  padding-right: 75px;
 }
 .info-container {
   margin-bottom: 40px;
@@ -23,9 +23,9 @@
     @include font(12px, $font-weight-norm, 24px);
   }
 
-  // .description {
-  //   @include font(14px, $font-weight-norm, 24px);
-  // }
+  .description {
+    @include font(14px, $font-weight-norm, 24px);
+  }
 }
 
 .projects-container {
