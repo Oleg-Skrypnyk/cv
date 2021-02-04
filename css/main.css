@@ -29,10 +29,7 @@
 
 body {
   background: #f5f7fa;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 40px 20px;
   font-family: Montserrat, sans-serif;
 }
 
@@ -40,12 +37,17 @@ body {
   background: #fff;
   max-width: 1200px;
   min-width: 370px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0 auto;
   -webkit-box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
           box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 img {
@@ -59,6 +61,45 @@ img {
   min-width: 370px;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    -webkit-box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.info-mob {
+  padding: 30px 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .info-mob {
+    display: none;
+  }
+}
+
+.info-mob .profession-mob {
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+}
+
+.info-mob .name-mob {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #fff;
+}
+
+.info-mob .personal-mob {
+  color: #d6d8db;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .my-photo {
@@ -130,10 +171,29 @@ img {
 }
 
 .about-me-container {
-  padding-top: 75px;
+  padding-top: 50px;
   padding-bottom: 30px;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-me-container {
+    padding-top: 75px;
+    padding-bottom: 30px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+.info-tablet {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .info-tablet {
+    display: none;
+  }
 }
 
 .info-container {
@@ -154,7 +214,6 @@ img {
 }
 
 .info-container .personal {
-  margin-bottom: 20px;
   color: #a8a8a8;
   font-size: 12px;
   font-weight: 400;
@@ -260,5 +319,11 @@ img {
 .dots {
   color: #bebebe;
   font-weight: 100;
+}
+
+@media screen and (max-width: 767px) {
+  .dots {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

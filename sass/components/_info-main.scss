@@ -1,9 +1,24 @@
 .about-me-container {
-  padding-top: 75px;
+  padding-top: 50px;
   padding-bottom: 30px;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 75px;
+    padding-bottom: 30px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
 }
+
+.info-tablet {
+  margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .info-container {
   margin-bottom: 40px;
 
@@ -17,8 +32,6 @@
   }
 
   .personal {
-    margin-bottom: 20px;
-
     color: $secondary-text-color;
     @include font(12px, $font-weight-norm, 24px);
   }
@@ -124,4 +137,8 @@
 .dots {
   color: $dots-color;
   font-weight: 100;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }

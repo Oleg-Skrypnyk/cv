@@ -3,6 +3,33 @@
   min-width: 370px;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.info-mob {
+  padding: 30px 40px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  .profession-mob {
+    margin-bottom: 25px;
+    @include font(14px, $font-weight-norm, 24px);
+    color: $sidebar-text-color;
+  }
+
+  .name-mob {
+    @include font(35px, 700, 60px);
+    color: $sidebar-text-color;
+  }
+
+  .personal-mob {
+    color: $item-sidebar-color;
+    @include font(12px, $font-weight-norm, 24px);
+  }
 }
 
 .my-photo {
