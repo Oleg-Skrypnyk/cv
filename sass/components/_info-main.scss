@@ -134,11 +134,17 @@
   @include font(14px, $font-weight-norm, 24px);
 }
 
+.education-name {
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
+
 .dots {
   color: $dots-color;
   font-weight: 100;
 
-  // @media screen and (max-width: 767px) {
-  //   display: none;
-  // }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
