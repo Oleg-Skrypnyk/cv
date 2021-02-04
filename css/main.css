@@ -320,10 +320,4 @@ img {
   color: #bebebe;
   font-weight: 100;
 }
-
-@media screen and (max-width: 767px) {
-  .dots {
-    display: none;
-  }
-}
 /*# sourceMappingURL=main.css.map */
