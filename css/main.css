@@ -33,10 +33,16 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+@media screen and (max-width: 767px) {
+  body {
+    padding: 0;
+  }
+}
+
 .wrapper {
   background: #fff;
   max-width: 1200px;
-  min-width: 360px;
+  min-width: 370px;
   margin: 0 auto;
   -webkit-box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
           box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
@@ -58,7 +64,7 @@ img {
 
 .sidebar {
   background: #1e2939;
-  min-width: 360px;
+  min-width: 370px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
