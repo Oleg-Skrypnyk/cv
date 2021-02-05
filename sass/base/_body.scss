@@ -11,20 +11,20 @@ body {
   @media screen and (max-width: 767px) {
     padding: 0;
   }
-  @media print {
-    display: none;
-  }
+
+  // @media print {
+  //   display: none;
+  // }
 }
 
 .wrapper {
-  // display: flex;
   background: $sidebar-text-color;
   max-width: 1200px;
   min-width: 370px;
   margin: 0 auto;
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     display: flex;
   }
 }
