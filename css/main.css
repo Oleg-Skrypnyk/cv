@@ -39,6 +39,12 @@ body {
   }
 }
 
+@media print {
+  body {
+    display: none;
+  }
+}
+
 .wrapper {
   background: #fff;
   max-width: 1200px;
