@@ -31,12 +31,12 @@
     display: none;
   }
 
-  .my-photo {
-    width: 100%;
-  }
+  //   .my-photo {
+  //     max-width: 100%;
+  //   }
 
   .contacts-container {
-    margin-top: 50px;
+    margin-top: 60px;
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -48,29 +48,33 @@
     color: $sidebar-text-color;
   }
 
+  .skills-title-lang {
+    padding-top: 10px;
+  }
+
   .contacts-link {
     text-decoration: none;
-    @include font(12px, $font-weight-norm, 1.7);
+    @include font(14px, $font-weight-norm, 1.7);
     color: $item-sidebar-color;
     @include transit(color);
   }
 
   .contacts-link-type {
     margin-right: 10px;
-    @include font(12px, $font-weight-bolt, 1.7);
+    @include font(14px, $font-weight-bolt, 1.7);
     color: $sidebar-text-color;
     @include transit(color);
   }
 
   .skills-container {
-    margin-top: 45px;
+    margin-top: 50px;
     margin-left: 30px;
     margin-right: 30px;
   }
 
   .skills-item {
     margin-left: 20px;
-    @include font(12px, $font-weight-norm, 1.7);
+    @include font(14px, $font-weight-norm, 1.7);
     color: $accent-color;
 
     .skills-text {
