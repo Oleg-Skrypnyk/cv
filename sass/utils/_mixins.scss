@@ -6,3 +6,9 @@
   font-weight: $weight;
   line-height: $height;
 }
+
+@mixin transition($property...) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $cubic-bezier;
+}

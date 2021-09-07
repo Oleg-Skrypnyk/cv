@@ -87,8 +87,10 @@
   text-decoration: none;
   color: $accent-color;
 
+  @include transition(font-size);
+
   &:hover {
-    text-decoration: underline;
+    font-size: 17px;
   }
 }
 
@@ -134,17 +136,52 @@
   @include font(14px, $font-weight-norm, 1.7);
 }
 
-.education-name {
-  @media screen and (max-width: 767px) {
-    display: block;
-  }
-}
+// .education-name {
+//   @media screen and (max-width: 767px) {
+//     display: block;
+//   }
+// }
+
+// .dots {
+//   color: $dots-color;
+//   font-weight: 100;
+
+//   @media screen and (max-width: 767px) {
+//     display: none;
+//   }
+// }
 
 .dots {
   color: $dots-color;
   font-weight: 100;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 657px) {
     display: none;
+  }
+
+  @media screen and (min-width: 657px) and (max-width: 767px) {
+    display: inline;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1035px) {
+    display: inline;
+  }
+}
+
+.link-description {
+  @media screen and (max-width: 657px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 657px) and (max-width: 767px) {
+    display: inline;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1034px) {
+    display: block;
   }
 }

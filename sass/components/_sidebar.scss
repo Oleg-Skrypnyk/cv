@@ -55,17 +55,36 @@
 }
 
 .contacts-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
   text-decoration: none;
   @include font(14px, $font-weight-norm, 1.7);
-
   color: $item-sidebar-color;
-  @include transit(color);
+
+  @include transition(color, font-weight, font-size);
 
   &:hover,
   &:focus,
   .contact-block:hover &,
   .contact-block:focus & {
     color: $accent-color;
+    // text-decoration: underline;
+    @include font(14.5px, 500, 1.7);
+  }
+}
+
+.icon-contacts {
+  margin-right: 5px;
+}
+
+.icon {
+  fill: $item-sidebar-color;
+  @include transit(fill);
+
+  .contacts-link:hover &,
+  .contacts-link:focus & {
+    fill: $accent-color;
   }
 }
 
